@@ -8,14 +8,40 @@
 import SwiftUI
 
 struct ContentView: View {
+    let weekdays: [Weekday] = [
+        .monday, .tuesday,
+        .wednesday, .thursday,
+        .friday, .saturday, .sunday
+    ]
+    
+    @State private var selected: Weekday = .monday
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack {
+            Color.white.ignoresSafeArea()
+            VStack {
+                Image(systemName: "globe")
+                    .resizable()
+                    .scaledToFit()
+                    .fontWeight(.light)
+                    .frame(height: 80)
+                    .foregroundColor(.teal)
+                Text("Hello, \(selected.name)!")
+            }
+        }
+        .safeAreaInset(edge: .top) {
+            ScrollingPicker(weekdays, selected: $selected) { weekday in
+                DayPickerItem(name: weekday.name, isSelected: weekday == selected)
+            }
+            .padding(8)
+            .background(Color(.systemGroupedBackground))
+            .clipShape(Capsule())
         }
         .padding()
+        .task {
+            try? await Task.sleep(for: .seconds(2))
+            selected = .friday
+        }
     }
 }
 

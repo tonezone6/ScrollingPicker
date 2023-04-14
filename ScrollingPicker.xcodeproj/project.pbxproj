@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DBF8854D29E93AF600C75E3F /* ios_custom_tabbarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF8854C29E93AF600C75E3F /* ios_custom_tabbarApp.swift */; };
+		DBF8854D29E93AF600C75E3F /* ScrollingPickerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF8854C29E93AF600C75E3F /* ScrollingPickerApp.swift */; };
 		DBF8854F29E93AF600C75E3F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF8854E29E93AF600C75E3F /* ContentView.swift */; };
 		DBF8855129E93AF700C75E3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBF8855029E93AF700C75E3F /* Assets.xcassets */; };
 		DBF8855429E93AF700C75E3F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBF8855329E93AF700C75E3F /* Preview Assets.xcassets */; };
+		DBF8855B29E93B1F00C75E3F /* ScrollingPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF8855A29E93B1F00C75E3F /* ScrollingPicker.swift */; };
+		DBF8855D29E94EFC00C75E3F /* DayPickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF8855C29E94EFC00C75E3F /* DayPickerRow.swift */; };
+		DBF8855F29E9525100C75E3F /* Weekday.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF8855E29E9525100C75E3F /* Weekday.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DBF8854929E93AF600C75E3F /* ios-custom-tabbar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-custom-tabbar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DBF8854C29E93AF600C75E3F /* ios_custom_tabbarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_custom_tabbarApp.swift; sourceTree = "<group>"; };
+		DBF8854929E93AF600C75E3F /* ScrollingPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollingPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBF8854C29E93AF600C75E3F /* ScrollingPickerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingPickerApp.swift; sourceTree = "<group>"; };
 		DBF8854E29E93AF600C75E3F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DBF8855029E93AF700C75E3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBF8855329E93AF700C75E3F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DBF8855A29E93B1F00C75E3F /* ScrollingPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingPicker.swift; sourceTree = "<group>"; };
+		DBF8855C29E94EFC00C75E3F /* DayPickerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPickerRow.swift; sourceTree = "<group>"; };
+		DBF8855E29E9525100C75E3F /* Weekday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weekday.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +49,7 @@
 		DBF8854A29E93AF600C75E3F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DBF8854929E93AF600C75E3F /* ios-custom-tabbar.app */,
+				DBF8854929E93AF600C75E3F /* ScrollingPicker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,8 +57,11 @@
 		DBF8854B29E93AF600C75E3F /* ios-custom-tabbar */ = {
 			isa = PBXGroup;
 			children = (
-				DBF8854C29E93AF600C75E3F /* ios_custom_tabbarApp.swift */,
+				DBF8854C29E93AF600C75E3F /* ScrollingPickerApp.swift */,
 				DBF8854E29E93AF600C75E3F /* ContentView.swift */,
+				DBF8855A29E93B1F00C75E3F /* ScrollingPicker.swift */,
+				DBF8855E29E9525100C75E3F /* Weekday.swift */,
+				DBF8855C29E94EFC00C75E3F /* DayPickerRow.swift */,
 				DBF8855029E93AF700C75E3F /* Assets.xcassets */,
 				DBF8855229E93AF700C75E3F /* Preview Content */,
 			);
@@ -70,9 +79,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DBF8854829E93AF600C75E3F /* ios-custom-tabbar */ = {
+		DBF8854829E93AF600C75E3F /* ScrollingPicker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DBF8855729E93AF700C75E3F /* Build configuration list for PBXNativeTarget "ios-custom-tabbar" */;
+			buildConfigurationList = DBF8855729E93AF700C75E3F /* Build configuration list for PBXNativeTarget "ScrollingPicker" */;
 			buildPhases = (
 				DBF8854529E93AF600C75E3F /* Sources */,
 				DBF8854629E93AF600C75E3F /* Frameworks */,
@@ -82,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = "ios-custom-tabbar";
+			name = ScrollingPicker;
 			productName = "ios-custom-tabbar";
-			productReference = DBF8854929E93AF600C75E3F /* ios-custom-tabbar.app */;
+			productReference = DBF8854929E93AF600C75E3F /* ScrollingPicker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +111,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DBF8854429E93AF600C75E3F /* Build configuration list for PBXProject "ios-custom-tabbar" */;
+			buildConfigurationList = DBF8854429E93AF600C75E3F /* Build configuration list for PBXProject "ScrollingPicker" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +124,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DBF8854829E93AF600C75E3F /* ios-custom-tabbar */,
+				DBF8854829E93AF600C75E3F /* ScrollingPicker */,
 			);
 		};
 /* End PBXProject section */
@@ -137,8 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBF8855B29E93B1F00C75E3F /* ScrollingPicker.swift in Sources */,
+				DBF8855F29E9525100C75E3F /* Weekday.swift in Sources */,
+				DBF8855D29E94EFC00C75E3F /* DayPickerRow.swift in Sources */,
 				DBF8854F29E93AF600C75E3F /* ContentView.swift in Sources */,
-				DBF8854D29E93AF600C75E3F /* ios_custom_tabbarApp.swift in Sources */,
+				DBF8854D29E93AF600C75E3F /* ScrollingPickerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,7 +332,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DBF8854429E93AF600C75E3F /* Build configuration list for PBXProject "ios-custom-tabbar" */ = {
+		DBF8854429E93AF600C75E3F /* Build configuration list for PBXProject "ScrollingPicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DBF8855529E93AF700C75E3F /* Debug */,
@@ -329,7 +341,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DBF8855729E93AF700C75E3F /* Build configuration list for PBXNativeTarget "ios-custom-tabbar" */ = {
+		DBF8855729E93AF700C75E3F /* Build configuration list for PBXNativeTarget "ScrollingPicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DBF8855829E93AF700C75E3F /* Debug */,
